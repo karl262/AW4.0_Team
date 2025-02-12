@@ -17,6 +17,7 @@ import {MatButton, MatIconButton} from '@angular/material/button';
 import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/material/sidenav';
 import {MatListItem, MatNavList} from '@angular/material/list';
 import {ChartsComponent} from './features/charts/charts.component';
+import {SidebarComponent} from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
