@@ -31,3 +31,26 @@
 .spacer {
   flex: 1;
 }
+
+mat-nav-list a:hover, .active {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+
+.sidenav {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 20px;
+}

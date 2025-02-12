@@ -10,3 +10,19 @@
   align-items: center;
   padding: 15px;
 }
+
+mat-nav-list a:hover, .active {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+
+mat-nav-list a {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}

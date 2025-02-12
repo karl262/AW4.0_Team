@@ -1,0 +1,63 @@
+/* Contenedor Principal */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Barra superior */
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Sidebar */
+mat-nav-list a {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.5s ease;
+}
+
+
+mat-nav-list a:hover, .active {
+    background: #e3f2fd;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+/* Contenido */
+.content {
+    flex-grow: 1;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-card {
+    width: 60%; /* Ajusta el ancho a 60% */
+    max-width: 400px; /* Ajusta el ancho máximo a 400px */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
