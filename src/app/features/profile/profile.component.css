@@ -1,0 +1,33 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.profile-card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sidenav-container {
+  display: flex;
+  height: 100vh;
+}
+.profile-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.spacer {
+  flex: 1;
+}

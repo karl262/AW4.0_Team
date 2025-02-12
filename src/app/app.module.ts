@@ -13,9 +13,10 @@ import {MatCard, MatCardContent, MatCardHeader, MatCardModule} from "@angular/ma
 import {MatGridList, MatGridTile} from '@angular/material/grid-list';
 import {MatIcon} from '@angular/material/icon';
 import {MatToolbar} from '@angular/material/toolbar';
-import {MatIconButton} from '@angular/material/button';
+import {MatButton, MatIconButton} from '@angular/material/button';
 import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/material/sidenav';
 import {MatListItem, MatNavList} from '@angular/material/list';
+import {ChartsComponent} from './features/charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {MatListItem, MatNavList} from '@angular/material/list';
     LoginComponent,
     DashboardComponent,
     ProfileComponent,
-    ConfigurationComponent
+    ConfigurationComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import {MatListItem, MatNavList} from '@angular/material/list';
     MatNavList,
     MatSidenavContent,
     MatSidenavContainer,
-    MatListItem
+    MatListItem,
+    MatButton
   ],
   providers: [
     provideAnimationsAsync()
