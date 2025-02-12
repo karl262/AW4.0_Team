@@ -18,6 +18,7 @@ import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/mater
 import {MatListItem, MatNavList} from '@angular/material/list';
 import {ChartsComponent} from './features/charts/charts.component';
 import {SidebarComponent} from './shared/sidebar/sidebar.component';
+import { TasksComponent } from './features/tasks/tasks.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {SidebarComponent} from './shared/sidebar/sidebar.component';
     DashboardComponent,
     ProfileComponent,
     ConfigurationComponent,
-    ChartsComponent
+    ChartsComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import {LoginComponent} from './features/login/login.component';
 import {ProfileComponent} from './features/profile/profile.component';
 import {ConfigurationComponent} from './features/configuration/configuration.component';
 import {ChartsComponent} from './features/charts/charts.component';
+import {TasksComponent} from './features/tasks/tasks.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'charts',
     component: ChartsComponent
+  },
+  {
+    path: 'tasks',
+    component: TasksComponent
   },
   {
     path: '',

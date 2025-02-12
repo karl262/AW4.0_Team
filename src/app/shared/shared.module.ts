@@ -13,6 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import {MatSidenav, MatSidenavContainer, MatSidenavModule} from '@angular/material/sidenav';
 import {MatListItem, MatListModule, MatNavList} from '@angular/material/list';
 import {RouterLink} from '@angular/router';
+import {TasksComponent} from '../features/tasks/tasks.component';
 
 
 
@@ -48,7 +49,7 @@ import {RouterLink} from '@angular/router';
     NavbarComponent,
     FooterComponent,
     ImageCardComponent,
-    SidebarComponent
+    SidebarComponent,
   ]
 })
 export class SharedModule { }
