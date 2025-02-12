@@ -7,17 +7,42 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { LoginComponent } from './features/login/login.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import {SharedModule} from './shared/shared.module';
+import { ProfileComponent } from './features/profile/profile.component';
+import { ConfigurationComponent } from './features/configuration/configuration.component';
+import {MatCard, MatCardContent, MatCardHeader, MatCardModule} from "@angular/material/card";
+import {MatGridList, MatGridTile} from '@angular/material/grid-list';
+import {MatIcon} from '@angular/material/icon';
+import {MatToolbar} from '@angular/material/toolbar';
+import {MatIconButton} from '@angular/material/button';
+import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/material/sidenav';
+import {MatListItem, MatNavList} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfileComponent,
+    ConfigurationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MatCard,
+    MatCardHeader,
+    MatCardContent,
+    MatCardModule,
+    MatGridTile,
+    MatIcon,
+    MatGridList,
+    MatToolbar,
+    MatIconButton,
+    MatSidenav,
+    MatNavList,
+    MatSidenavContent,
+    MatSidenavContainer,
+    MatListItem
   ],
   providers: [
     provideAnimationsAsync()

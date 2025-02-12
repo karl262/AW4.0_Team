@@ -1,0 +1,22 @@
+.dashboard-container {
+  height: 100vh;
+}
+.spacer {
+  flex: 1;
+}
+.dashboard-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}

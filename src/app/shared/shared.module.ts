@@ -5,14 +5,18 @@ import { FooterComponent } from './footer/footer.component';
 import {MatToolbar, MatToolbarRow} from '@angular/material/toolbar';
 import {MatIcon} from '@angular/material/icon';
 import {MatIconButton} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 import {MatMenu, MatMenuItem, MatMenuTrigger} from '@angular/material/menu';
+import { ImageCardComponent } from './image-card/image-card.component';
 
 
 
 @NgModule({
   declarations: [
   NavbarComponent,
-  FooterComponent
+  FooterComponent,
+  ImageCardComponent
   ],
   imports: [
     CommonModule,
@@ -22,11 +26,14 @@ import {MatMenu, MatMenuItem, MatMenuTrigger} from '@angular/material/menu';
     MatIconButton,
     MatMenu,
     MatMenuItem,
-    MatMenuTrigger
+    MatMenuTrigger,
+    MatButtonModule,
+    MatCardModule
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ImageCardComponent
   ]
 })
 export class SharedModule { }

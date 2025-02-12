@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  stats = [
+    { title: 'Nuevos Pacientes', value: 150, icon: 'person_add' },
+    { title: 'Tasa de Recaída', value: '53%', icon: 'bar_chart' },
+    { title: 'Citas Registradas', value: 44, icon: 'event' },
+    { title: 'Pacientes Activos', value: 65, icon: 'groups' }
+  ];
+
 }
