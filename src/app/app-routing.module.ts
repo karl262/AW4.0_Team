@@ -7,6 +7,7 @@ import {ConfigurationComponent} from './features/configuration/configuration.com
 import {ChartsComponent} from './features/charts/charts.component';
 import {TasksComponent} from './features/tasks/tasks.component';
 import {CalendarComponent} from './features/calendar/calendar.component';
+import {NotificationsComponent} from './features/notifications/notifications.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'tasks',
     component: TasksComponent
+  },
+  {
+    path: 'notifications',
+    component: NotificationsComponent
   },
   {
     path: '',

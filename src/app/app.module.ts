@@ -22,6 +22,7 @@ import { CalendarComponent } from './features/calendar/calendar.component';
 import { MatDatepickerModule } from '@angular/material/datepicker'; // Importa MatDatepickerModule
 import { MatInputModule } from '@angular/material/input'; // Importa MatInputModule
 import { MatNativeDateModule } from '@angular/material/core';
+import {NotificationsComponent} from './features/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     ConfigurationComponent,
     ChartsComponent,
     TasksComponent,
+    NotificationsComponent,
     CalendarComponent
   ],
   imports: [

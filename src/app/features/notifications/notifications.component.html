@@ -2,9 +2,9 @@
   <button mat-icon-button (click)="toggleSidenav()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Gráficos</span>
+  <span>Notificaciones</span>
   <span class="spacer"></span>
-  <button mat-icon-button routerLink="/notifications">
+  <button mat-icon-button>
     <mat-icon>notifications</mat-icon>
   </button>
   <button mat-icon-button routerLink="/profile">
@@ -19,18 +19,22 @@
       <a mat-list-item routerLink="/charts"><mat-icon>bar_chart</mat-icon> Charts</a>
       <a mat-list-item routerLink="/tasks"><mat-icon>assignment</mat-icon> Tasks</a>
       <a mat-list-item routerLink="/calendar"><mat-icon>event</mat-icon> Calendar</a>
+      <a mat-list-item routerLink="/notifications"><mat-icon>notifications</mat-icon> Notificaciones</a>
       <a mat-list-item routerLink="/profile"><mat-icon>person</mat-icon> Perfil</a>
     </mat-nav-list>
   </mat-sidenav>
 
-  <mat-sidenav-content class="charts-content">
-    <div class="chart-container">
-      <mat-card>
+  <mat-sidenav-content class="notifications-content">
+    <div class="notifications-container">
+      <mat-card class="notification-card" *ngFor="let notification of notifications; let i = index">
         <mat-card-header>
-          <mat-card-title>Pacientes Atendidos</mat-card-title>
+          <mat-card-title>{{ notification.title }}</mat-card-title>
+          <button mat-icon-button (click)="markAsRead(i)">
+            <mat-icon>{{ notification.read ? 'done' : 'mark_email_unread' }}</mat-icon>
+          </button>
         </mat-card-header>
         <mat-card-content>
-          <canvas id="chartCanvas"></canvas>
+          <p>{{ notification.message }}</p>
         </mat-card-content>
       </mat-card>
     </div>
